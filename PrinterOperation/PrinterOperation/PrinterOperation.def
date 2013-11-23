@@ -1,0 +1,9 @@
+; PrinterOperation.def : Declares the module parameters.
+
+LIBRARY      "PrinterOperation.OCX"
+
+EXPORTS
+	DllCanUnloadNow     PRIVATE
+	DllGetClassObject   PRIVATE
+	DllRegisterServer   PRIVATE
+	DllUnregisterServer PRIVATE

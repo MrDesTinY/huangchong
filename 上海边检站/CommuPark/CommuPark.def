@@ -1,0 +1,16 @@
+; CommuPark.def : Declares the module parameters for the DLL.
+
+LIBRARY      "CommuPark"
+
+EXPORTS
+   
+    
+    InitIniFile
+    InitLib
+    UnInitLib
+    InitLog
+    UnInitLog
+    StartServer
+    StopServer
+    CheckTime
+    UCIUpdate

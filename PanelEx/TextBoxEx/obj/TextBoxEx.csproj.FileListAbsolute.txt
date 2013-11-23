@@ -1,0 +1,10 @@
+C:\Documents and Settings\Administrator\桌面\随心所欲改变边框的自定义Panel\PanelEx\TextBoxEx\bin\Debug\TextBoxEx.dll
+C:\Documents and Settings\Administrator\桌面\随心所欲改变边框的自定义Panel\PanelEx\TextBoxEx\bin\Debug\TextBoxEx.pdb
+E:\SVN\VMS\trunk\停车场管理软件基线\停车场管理系统100920\bin\TextBoxEx.dll
+E:\SVN\VMS\trunk\停车场管理软件基线\停车场管理系统100920\bin\TextBoxEx.pdb
+C:\Documents and Settings\Administrator\桌面\随心所欲改变边框的自定义Panel\PanelEx\TextBoxEx\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\桌面\随心所欲改变边框的自定义Panel\PanelEx\TextBoxEx\obj\Debug\TextBoxEx.dll
+C:\Documents and Settings\Administrator\桌面\随心所欲改变边框的自定义Panel\PanelEx\TextBoxEx\obj\Debug\TextBoxEx.pdb
+E:\项目\项目备份\停车场管理系统动态库源码\停车场自定义控件源码\PanelEx\TextBoxEx\obj\Debug\ResolveAssemblyReference.cache
+E:\项目\项目备份\停车场管理系统动态库源码\停车场自定义控件源码\PanelEx\TextBoxEx\obj\Debug\TextBoxEx.dll
+E:\项目\项目备份\停车场管理系统动态库源码\停车场自定义控件源码\PanelEx\TextBoxEx\obj\Debug\TextBoxEx.pdb

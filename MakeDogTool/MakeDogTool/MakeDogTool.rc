@@ -1,0 +1,263 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\MakeDogTool.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""l.CHS\\afxres.rc""      // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\MakeDogTool.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于做狗工具"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,20,20
+    LTEXT           "出入口管理软件做狗工具，1.0 版",IDC_STATIC,42,14,114,8,SS_NOPREFIX | SS_CENTERIMAGE
+    LTEXT           "杭州海康威视高德威 Copyright (C) 2011",IDC_STATIC,35,26,125,8
+    DEFPUSHBUTTON   "确定",IDOK,113,41,50,14,WS_GROUP
+END
+
+IDD_MAKEDOGTOOL_DIALOG DIALOGEX 0, 0, 215, 139
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "出入口管理软件做狗工具"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "检测狗",IDC_BUTTON1,11,4,195,13,BS_NOTIFY,WS_EX_STATICEDGE
+    PUSHBUTTON      "制作狗",IDC_BUTTON2,146,47,61,21,BS_NOTIFY
+    LTEXT           "绑定车牌识别路数:",IDC_STATIC,10,46,58,8
+    LTEXT           "设备类型:",IDC_STATIC,143,31,31,8
+    EDITTEXT        IDC_EDIT2,86,45,39,12,ES_AUTOHSCROLL
+    LTEXT           "绑定人脸识别路数:",IDC_STATIC,10,60,58,8
+    EDITTEXT        IDC_EDIT7,86,59,39,12,ES_AUTOHSCROLL
+    LTEXT           "设备类型:",IDC_STATIC,143,90,31,8
+    EDITTEXT        IDC_EDIT11,86,104,39,12,ES_AUTOHSCROLL
+    LTEXT           "读出人脸识别绑定路数:",IDC_STATIC,10,119,72,8
+    EDITTEXT        IDC_EDIT15,86,118,39,12,ES_AUTOHSCROLL
+    LTEXT           "写狗标志:",IDC_STATIC,10,90,31,8
+    EDITTEXT        IDC_EDIT19,73,90,52,12,ES_AUTOHSCROLL
+    GROUPBOX        "做狗模块",IDC_STATIC,6,18,205,56
+    COMBOBOX        IDC_COMBO1,73,31,52,73,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP,WS_EX_STATICEDGE
+    LTEXT           "请选择设备型号：",IDC_STATIC,10,31,56,8
+    GROUPBOX        "读狗模块",IDC_STATIC,6,77,205,59
+    LTEXT           "读出车牌识别绑定路数:",IDC_STATIC,10,106,72,8
+    COMBOBOX        IDC_COMBO2,176,31,31,53,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO3,176,90,31,61,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "读取狗",IDC_BUTTON4,146,106,61,21,BS_NOTIFY
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "杭州海康威视系统有限公司"
+            VALUE "FileDescription", "出入口管理软件做狗工具"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "MakeDogTool.exe"
+            VALUE "LegalCopyright", "杭州海康威视系统有限公司。保留所有权利。"
+            VALUE "OriginalFilename", "MakeDogTool.exe"
+            VALUE "ProductName", "出入口管理软件做狗工具"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_MAKEDOGTOOL_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 211
+        TOPMARGIN, 2
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_MAKEDOGTOOL_DIALOG DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 9, 0
+0x4345, 0x2d54, 0x3031, 0x3830, "\000" 
+    IDC_COMBO1, 0x403, 11, 0
+0x4345, 0x2d54, 0x3031, 0x3430, 0x322d, "\000" 
+    IDC_COMBO1, 0x403, 9, 0
+0x4345, 0x2d54, 0x3032, 0x3230, "\000" 
+    IDC_COMBO1, 0x403, 11, 0
+0x4345, 0x2d54, 0x3032, 0x3230, 0x322d, "\000" 
+    IDC_COMBO1, 0x403, 9, 0
+0x4345, 0x2d54, 0x3032, 0x3430, "\000" 
+    IDC_COMBO1, 0x403, 11, 0
+0x4345, 0x2d54, 0x3033, 0x3230, 0x322d, "\000" 
+    IDC_COMBO1, 0x403, 9, 0
+0x4345, 0x2d54, 0x3033, 0x3430, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0xe4c6, 0xfbcb, "\000" 
+    IDC_COMBO2, 0x403, 5, 0
+0xeab1, 0xe5c7, "\000" 
+    IDC_COMBO2, 0x403, 5, 0
+0xa3c4, 0xe2c4, "\000" 
+    IDC_COMBO2, 0x403, 5, 0
+0xdfb8, 0xe5c7, "\000" 
+    IDC_COMBO2, 0x403, 5, 0
+0xe4c6, 0xfbcb, "\000" 
+    IDC_COMBO3, 0x403, 5, 0
+0xeab1, 0xe5c7, "\000" 
+    IDC_COMBO3, 0x403, 5, 0
+0xa3c4, 0xe2c4, "\000" 
+    IDC_COMBO3, 0x403, 5, 0
+0xdfb8, 0xe5c7, "\000" 
+    IDC_COMBO3, 0x403, 5, 0
+0xe4c6, 0xfbcb, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 出入口管理软件做狗工具(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\MakeDogTool.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "l.CHS\afxres.rc"      // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

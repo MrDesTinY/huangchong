@@ -1,0 +1,76 @@
+// SCCP.idl : type library source for ActiveX Control project.
+
+// This file will be processed by the MIDL compiler tool to
+// produce the type library (SCCP.tlb) that will become a resource in
+// SCCP.ocx.
+
+#include <olectl.h>
+#include <idispids.h>
+
+[ uuid(2C648E7C-84B3-4893-98CB-3E90AF897786), version(1.0),
+  helpfile("SCCP.hlp"),
+  helpstring("SCCP ActiveX Control module"),
+  control ]
+library SCCPLib
+{
+	importlib(STDOLE_TLB);
+
+	//  Primary dispatch interface for CSCCPCtrl
+
+	[ uuid(804DAB8E-7240-41B9-B112-9E16F77CD812),
+	  helpstring("Dispatch interface for SCCP Control")]
+	dispinterface _DSCCP
+	{
+		properties:
+			[id(16) , helpstring("property RecvPlateImageFlag")] LONG RecvPlateImageFlag;
+			[id(17) , helpstring("property RecvImageFlag")] LONG RecvImageFlag;
+			[id(18) , helpstring("property RecvPlateBinImageFlag")] LONG RecvPlateBinImageFlag;
+			[id(19) , helpstring("property LogFile")] LONG LogFile;
+			[id(22) , helpstring("property DeviceInitOk")] VARIANT_BOOL DeviceInitOk;
+	methods:
+
+			[id(DISPID_ABOUTBOX)] void AboutBox();
+			[id(1), helpstring("method OpenNet")] LONG OpenNet(BSTR szIP, LONG nPort);
+			[id(2), helpstring("method OpenCom")] LONG OpenCom(LONG nComPort, LONG nBaudRate, LONG nParity, LONG nByteSize, LONG nStopBit);
+			[id(3), helpstring("method Close")] LONG Close(void);
+			[id(4), helpstring("method SetUp")] LONG SetUp(LONG nTypeId);
+			[id(5), helpstring("method Config")] LONG Config(LONG nTypeId);
+			[id(6), helpstring("method StarVideo")] LONG StarVideo(void);
+			[id(7), helpstring("method StopVideo")] LONG StopVideo(void);
+			[id(8), helpstring("method GetStatus")] LONG GetStatus(void);
+			[id(9), helpstring("method GetPlate")] BSTR GetPlate(void);
+			[id(10), helpstring("method GetPlateColor")] BSTR GetPlateColor(void);
+			[id(11), helpstring("method SaveImage")] LONG SaveImage(BSTR szPath, BSTR szFileName, LONG nWidth, LONG nHeight, LONG nQuality, LONG nImageType);
+			[id(12), helpstring("method SavePlateImage")] LONG SavePlateImage(BSTR szPath, BSTR szFileName);
+	
+			[id(20), helpstring("method SavePlateBinImage")] LONG SavePlateBinImage(BSTR szPath, BSTR szFileName);
+			[id(21), helpstring("method Trigger")] LONG Trigger(void);
+			[id(23), helpstring("method GetIPAddr")] BSTR GetIPAddr(void);
+			[id(24), helpstring("method GetPort")] BSTR GetPort(void);
+			[id(25), helpstring("…Ë÷√’æ√˚≥∆")] LONG SetSFZ(BSTR name);
+	};
+
+	//  Event dispatch interface for CSCCPCtrl
+
+	[ uuid(81E3F915-054F-49B6-A368-FE0B123D5D9C),
+	  helpstring("Event interface for SCCP Control") ]
+	dispinterface _DSCCPEvents
+	{
+		properties:
+			//  Event interface has no properties
+
+		methods:
+			[id(1)] void OnPlateReceive(void);
+	};
+
+	//  Class information for CSCCPCtrl
+
+	[ uuid(7A8C7463-738C-4F63-AB50-316423960F6F),
+	  helpstring("SCCP Control"), control ]
+	coclass SCCP
+	{
+		[default] dispinterface _DSCCP;
+		[default, source] dispinterface _DSCCPEvents;
+	};
+
+};

@@ -1,0 +1,54 @@
+// PrinterOperation.idl : type library source for ActiveX Control project.
+
+// This file will be processed by the MIDL compiler tool to
+// produce the type library (PrinterOperation.tlb) that will become a resource in
+// PrinterOperation.ocx.
+
+#include <olectl.h>
+#include <idispids.h>
+
+[ uuid(12435CCC-411F-4AA6-B72A-B82A63159C41), version(1.0),
+  helpfile("PrinterOperation.hlp"),
+  helpstring("PrinterOperation ActiveX Control module"),
+  control ]
+library PrinterOperationLib
+{
+	importlib(STDOLE_TLB);
+
+	//  Primary dispatch interface for CPrinterOperationCtrl
+
+	[ uuid(1C047CA9-D613-48B7-B8F2-5000B262FA9C),
+	  helpstring("Dispatch interface for PrinterOperation Control")]
+	dispinterface _DPrinterOperation
+	{
+		properties:
+		methods:
+
+			[id(DISPID_ABOUTBOX)] void AboutBox();
+			[id(1), helpstring("method SendPrintData:向指定打印机发送原始数据"), helpcontext(1)] LONG SendPrintData(BSTR byPrintData, ULONG ulDataCount, BSTR bsPrinterName);
+			[id(2), helpstring("method PrintTest"), helpcontext(2)] LONG PrintTest(void);
+	};
+
+	//  Event dispatch interface for CPrinterOperationCtrl
+
+	[ uuid(9AFD2FBF-35BE-4639-B49B-FB451C49881B),
+	  helpstring("Event interface for PrinterOperation Control") ]
+	dispinterface _DPrinterOperationEvents
+	{
+		properties:
+			//  Event interface has no properties
+
+		methods:
+	};
+
+	//  Class information for CPrinterOperationCtrl
+
+	[ uuid(4FD00B5E-4C1F-47A1-BB65-5DB8C8BB74EF),
+	  helpstring("PrinterOperation Control"), control ]
+	coclass PrinterOperation
+	{
+		[default] dispinterface _DPrinterOperation;
+		[default, source] dispinterface _DPrinterOperationEvents;
+	};
+
+};

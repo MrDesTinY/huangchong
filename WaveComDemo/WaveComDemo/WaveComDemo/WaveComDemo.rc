@@ -1,0 +1,255 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\WaveComDemo.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""l.CHS\\afxres.rc""      // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\WaveComDemo.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 WaveComDemo"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,21,20
+    LTEXT           "WaveComDemo，1.0 版",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2013",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "确定",IDOK,113,41,50,14,WS_GROUP
+END
+
+IDD_WAVECOMDEMO_DIALOG DIALOGEX 0, 0, 383, 153
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "短信猫工具"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "连接设备",IDC_BNCONNECT,322,21,50,14
+    EDITTEXT        IDC_EDCOMPORT,60,21,48,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_CBBAUD,155,21,48,73,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP,WS_EX_CLIENTEDGE
+    LTEXT           "设备串口号：",IDC_STATIC,15,21,42,8
+    LTEXT           "设备波特率：",IDC_STATIC,110,21,42,8
+    EDITTEXT        IDC_EDPHONENUM,60,38,48,12,ES_AUTOHSCROLL
+    LTEXT           "发送号码：",IDC_STATIC,15,38,35,8
+    LTEXT           "发送内容：",IDC_STATIC,110,38,35,8
+    EDITTEXT        IDC_EDSENDCONTENT,155,38,163,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDTYPE,245,21,73,12,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "设备型号：",IDC_STATIC,208,21,35,8
+    PUSHBUTTON      "发送短信",IDC_BNSEND,322,38,50,14
+    COMBOBOX        IDC_CBRECTYPE,60,55,48,81,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "接收类型：",IDC_STATIC,15,55,35,8
+    LTEXT           "接收内容：",IDC_STATIC,110,55,35,8
+    EDITTEXT        IDC_EDRECCONTENT,155,55,163,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "接收短信",IDC_BNRECIEVE,322,55,50,14
+    EDITTEXT        IDC_EDSMSINDEX,60,72,48,12,ES_AUTOHSCROLL
+    LTEXT           "短信索引号：",IDC_STATIC,15,72,42,8
+    PUSHBUTTON      "删除指定索引号的短信",IDC_BNDELINDEX,110,72,80,14
+    EDITTEXT        IDC_EDAUTO,60,89,48,12,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "自动收发：",IDC_STATIC,14,89,35,8
+    PUSHBUTTON      "检测自动收发",IDC_BNCHECKAUTO,110,89,50,14
+    EDITTEXT        IDC_EDNEW,60,106,48,12,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "有新短信：",IDC_STATIC,15,106,35,8
+    PUSHBUTTON      "检测新短信",IDC_BNCHECKNEW,110,106,50,14
+    PUSHBUTTON      "断开连接",IDC_BNDISCONNECT,14,122,50,14
+    GROUPBOX        "短信猫接口测试",IDC_STATIC,7,9,369,137
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "TODO: <公司名>"
+            VALUE "FileDescription", "TODO: <文件说明>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "WaveComDemo.exe"
+            VALUE "LegalCopyright", "TODO: (C) <公司名>。保留所有权利。"
+            VALUE "OriginalFilename", "WaveComDemo.exe"
+            VALUE "ProductName", "TODO: <产品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_WAVECOMDEMO_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 376
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 146
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_WAVECOMDEMO_DIALOG DLGINIT
+BEGIN
+    IDC_CBBAUD, 0x403, 5, 0
+0x3639, 0x3030, "\000" 
+    IDC_CBBAUD, 0x403, 6, 0
+0x3735, 0x3036, 0x0030, 
+    IDC_CBBAUD, 0x403, 7, 0
+0x3531, 0x3032, 0x3030, "\000" 
+    IDC_CBRECTYPE, 0x403, 9, 0
+0xb4ce, 0xc1b6, 0xccb6, 0xc5d0, "\000" 
+    IDC_CBRECTYPE, 0x403, 9, 0
+0xd1d2, 0xc1b6, 0xccb6, 0xc5d0, "\000" 
+    IDC_CBRECTYPE, 0x403, 9, 0
+0xfdb4, 0xa2b7, 0xccb6, 0xc5d0, "\000" 
+    IDC_CBRECTYPE, 0x403, 9, 0
+0xd1d2, 0xa2b7, 0xccb6, 0xc5d0, "\000" 
+    IDC_CBRECTYPE, 0x403, 9, 0
+0xabc8, 0xbfb2, 0xccb6, 0xc5d0, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 WaveComDemo(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\WaveComDemo.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "l.CHS\afxres.rc"      // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

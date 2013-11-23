@@ -1,0 +1,11 @@
+LIBRARY	"Encrypt"
+EXPORTS
+StatusValidate
+MakePRDog
+MakeFRDog
+MakeDog
+GetDogPRAccess
+GetDogFRAccess
+CheckDogBind
+GetBindHardWareInfo
+GetDogAccess

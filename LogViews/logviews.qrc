@@ -1,0 +1,16 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+<qresource>
+    <file>images/log.png</file>
+    <file>images/start.png</file>
+    <file>images/stop.png</file>
+    <file>images/save.png</file>
+    <file>images/open.png</file>
+    <file>images/clearlist.png</file>
+    <file>images/about.png</file>
+    <file>images/search.png</file>
+    <file>images/search_clear.png</file>
+    <file>images/go_to_line_no.png</file>
+    <file>images/settings.png</file>
+</qresource>
+</RCC>

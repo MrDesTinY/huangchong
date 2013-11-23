@@ -1,0 +1,389 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+// Generated Help ID header file
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.hm"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\PicInfoTool.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""l.CHS\\afxres.rc""      // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\PicInfoTool.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 PicInfoTool"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,21,20
+    LTEXT           "PicInfoTool，1.0 版",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2012",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "确定",IDOK,113,41,50,14,WS_GROUP
+END
+
+IDD_PICINFOTOOL_DIALOG DIALOGEX 0, 0, 738, 433
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "PicInfoTool"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "图片预览",IDC_STATIC_IMAGE_GROUP,260,12,464,405
+    EDITTEXT        IDC_EDIT_PATH,23,22,230,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "打开图片",IDC_BUTTON1,89,38,40,14
+    PUSHBUTTON      "读取信息",IDC_BUTTON2,138,38,40,14
+    PUSHBUTTON      "写入信息",IDC_BUTTON3,205,38,40,14,NOT WS_VISIBLE
+    GROUPBOX        "图片信息",IDC_STATIC,18,57,235,361
+    GROUPBOX        "信息头",IDC_STATIC,24,68,223,28
+    GROUPBOX        "抓拍信息",IDC_STATIC,24,99,223,108
+    GROUPBOX        "初始化参数信息",IDC_STATIC,24,210,223,96
+    GROUPBOX        "实时信息",IDC_STATIC,23,307,225,108
+    LTEXT           "协议版本：",IDC_STATIC,32,81,35,8
+    LTEXT           "校验信息：",IDC_STATIC,143,81,35,8
+    EDITTEXT        IDC_EDIT_CHECK,181,81,61,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "合成方式：",IDC_STATIC,28,111,35,8
+    LTEXT           "抓拍时间：",IDC_STATIC,105,112,35,8
+    EDITTEXT        IDC_EDIT_SNAPTIME,143,112,99,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "抓拍地点：",IDC_STATIC,28,127,35,8
+    EDITTEXT        IDC_EDIT_SNAPPLACE,63,127,179,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "违章类型：",IDC_STATIC,28,142,35,8
+    COMBOBOX        IDC_COMBO_VIOLATION,63,142,179,177,CBS_DROPDOWN | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "车速：",IDC_STATIC,28,158,22,8
+    EDITTEXT        IDC_EDIT_SPEED,48,158,30,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "限速：",IDC_STATIC,83,158,22,8
+    EDITTEXT        IDC_EDIT_LIMITSPEED,103,158,28,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "违章车辆所在车道号：",IDC_STATIC,136,158,70,8
+    EDITTEXT        IDC_EDIT_CHANNELNO,204,158,38,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "车牌号：",IDC_STATIC,28,174,28,8
+    EDITTEXT        IDC_EDIT_PLATENO,54,174,45,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "车身颜色：",IDC_STATIC,101,174,35,8
+    LTEXT           "车辆ID：",IDC_STATIC,177,174,28,8
+    EDITTEXT        IDC_EDIT_CARID,204,174,38,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "跟踪状态：",IDC_STATIC,28,190,35,8
+    EDITTEXT        IDC_EDIT_TRACK1,64,190,24,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_TRACK2,90,190,24,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_TRACK3,116,190,24,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_FrameNO1,169,190,22,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_FRAMENO2,194,190,22,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_FRAMENO3,220,190,22,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "帧号：",IDC_STATIC,147,190,22,8
+    LTEXT           "牌识库版本：",IDC_STATIC,30,221,42,8
+    EDITTEXT        IDC_EDIT_V_REC1,73,221,58,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "牌选库版本：",IDC_STATIC,30,235,42,8
+    EDITTEXT        IDC_EDIT_V_CHOICE1,73,235,58,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "跟踪库版本：",IDC_STATIC,133,221,42,8
+    EDITTEXT        IDC_EDIT_V_TRACK1,176,221,65,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "违章库版本：",IDC_STATIC,133,235,42,8
+    EDITTEXT        IDC_EDIT_V_VIO1,176,235,65,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "信号灯检测库版本：",IDC_STATIC,29,277,63,8
+    EDITTEXT        IDC_EDIT_V_LIGHT1,92,277,58,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "背向触发库版本：",IDC_STATIC,29,249,56,8
+    EDITTEXT        IDC_EDIT_V_BACK1,85,249,58,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "多帧识别库版本：",IDC_STATIC,29,263,56,8
+    EDITTEXT        IDC_EDIT_V_MULTIFRAME1,85,263,58,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "车道数：",IDC_STATIC,146,249,28,8
+    EDITTEXT        IDC_EDIT_CHANNELNUM,187,249,54,12,ES_AUTOHSCROLL | ES_READONLY
+    COMBOBOX        IDC_COMBO_CARCOLOR,135,174,39,147,CBS_DROPDOWNLIST | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "信号灯数：",IDC_STATIC,146,263,35,8
+    EDITTEXT        IDC_EDIT_LIGHTNUM,187,263,54,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "亮度：",IDC_STATIC,29,318,22,8
+    EDITTEXT        IDC_EDIT_LIGHTDEGREE,57,318,30,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "对比度：",IDC_STATIC,94,319,28,8
+    EDITTEXT        IDC_EDIT_CONTRAST,122,319,30,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "信号灯状态：",IDC_STATIC,29,333,42,8
+    EDITTEXT        IDC_EDIT_LIGHT_1,69,333,28,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_LIGHT_2,98,333,28,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_LIGHT_3,127,333,28,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_LIGHT_4,156,333,28,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "车道状态：",IDC_STATIC,29,347,35,8
+    EDITTEXT        IDC_EDIT_CHANNEL_1,60,363,68,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_CHANNEL_2,60,381,68,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_CHANNEL_3,60,399,68,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_CHANNEL_4,174,363,68,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_LIGHT_5,185,333,28,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_CHANNEL_5,174,381,68,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_CHANNEL_6,174,399,68,12,ES_AUTOHSCROLL | ES_READONLY
+    COMBOBOX        IDC_COMBO_PROTOCAL,68,81,59,59,CBS_DROPDOWN | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_COMBINE,60,111,42,42,CBS_DROPDOWN | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_LIGHT_6,214,333,28,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "",IDC_SHOW_IMAGE,265,23,455,389,SS_CENTERIMAGE | WS_BORDER
+    GROUPBOX        "打开图片",IDC_OPEN,14,10,242,45
+    LTEXT           "信号灯属性：",IDC_STATIC,30,291,42,8
+    EDITTEXT        IDC_ATTRI_LIGHT_1,74,291,28,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_ATTRI_LIGHT_2,102,291,28,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_ATTRI_LIGHT_3,130,291,28,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_ATTRI_LIGHT_4,158,291,28,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_ATTRI_LIGHT_5,186,291,28,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_ATTRI_LIGHT_6,214,291,28,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "车道1：",IDC_STATIC_LINE1,29,363,26,8
+    LTEXT           "车道4：",IDC_STATIC_LINE4,136,363,26,8
+    LTEXT           "车道3：",IDC_STATIC_LINE3,29,399,26,8
+    LTEXT           "车道2：",IDC_STATIC_LINE2,29,381,26,8
+    LTEXT           "车道5：",IDC_STATIC_LINE5,136,381,26,8
+    LTEXT           "车道6：",IDC_STATIC_LINE6,136,399,26,8
+    LTEXT           "颜色备注：左转车道（红）右转车道（黄）停车线（浅蓝）触发线（浅绿）车道线（深蓝）车牌跟踪（灰）红灯区域（粉红）",IDC_STATIC_FORGET,18,420,378,8
+    LTEXT           "X:0000,Y:0000",IDC_LOCATION,666,419,54,10,NOT WS_VISIBLE,0,HIDC_LOCATION
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "HIKVISION"
+            VALUE "FileDescription", "Image Infomation Tool"
+            VALUE "FileVersion", "1.0.0.1 Bulid20120428"
+            VALUE "InternalName", "PicInfoTool.exe"
+            VALUE "LegalCopyright", "(C) HIKVISION。保留所有权利。"
+            VALUE "OriginalFilename", "PicInfoTool.exe"
+            VALUE "ProductName", "版本信息查看工具"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_PICINFOTOOL_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 731
+        TOPMARGIN, 8
+        BOTTOMMARGIN, 431
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_PICINFOTOOL_DIALOG DLGINIT
+BEGIN
+    IDC_COMBO_VIOLATION, 0x403, 8, 0
+0xfdd5, 0xa3b3, 0x3028, 0x0029, 
+    IDC_COMBO_VIOLATION, 0x403, 27, 0
+0xbbb2, 0xdad4, 0xfabb, 0xafb6, 0xb5b3, 0xb5b3, 0xc0b5, 0xdac4, 0xd0d0, 
+0xbbca, 0x3128, 0x3130, 0x2938, "\000" 
+    IDC_COMBO_VIOLATION, 0x403, 33, 0
+0xfabb, 0xafb6, 0xb5b3, 0xa5ce, 0xb4b7, 0xe6b9, 0xa8b6, 0xb9ca, 0xc3d3, 
+0xa8d7, 0xc3d3, 0xb5b3, 0xc0b5, 0x3128, 0x3130, 0x2939, "\000" 
+    IDC_COMBO_VIOLATION, 0x403, 27, 0
+0xbbb2, 0xb4b0, 0xe6b9, 0xa8b6, 0xb5b3, 0xc0b5, 0xd0d0, 0xbbca, 0xb1d6, 
+0xd0d0, 0x3128, 0x3430, 0x2932, "\000" 
+    IDC_COMBO_VIOLATION, 0x403, 23, 0
+0xbbb2, 0xb4b0, 0xbcb5, 0xf2cf, 0xeab1, 0xbed6, 0xd0d0, 0xbbca, 0x3128, 
+0x3032, 0x2938, "\000" 
+    IDC_COMBO_VIOLATION, 0x403, 31, 0
+0xb9d1, 0xa3cd, 0xb9d6, 0xdfcf, 0xf2bb, 0xbdd4, 0xfdb9, 0xa3cd, 0xb9d6, 
+0xdfcf, 0xa3cd, 0xb5b3, 0x3128, 0x3132, 0x2931, "\000" 
+    IDC_COMBO_VIOLATION, 0x403, 25, 0
+0xb7c2, 0xdabf, 0xb5d3, 0xc2b6, 0xb4ce, 0xc0d2, 0xceb4, 0xc8b5, 0xf2ba, 
+0x3128, 0x3232, 0x2938, "\000" 
+    IDC_COMBO_VIOLATION, 0x403, 19, 0
+0xa5ce, 0xb4b7, 0xfbbd, 0xeec1, 0xeab1, 0xbed6, 0x3128, 0x3232, 0x2939, 
+"\000" 
+    IDC_COMBO_VIOLATION, 0x403, 23, 0
+0xa5ce, 0xb4b7, 0xfbbd, 0xb9d6, 0xeab1, 0xdfcf, 0xb8d6, 0xbeca, 0x3128, 
+0x3332, 0x2930, "\000" 
+    IDC_COMBO_VIOLATION, 0x403, 11, 0
+0xe6c4, 0xd0d0, 0x3128, 0x3033, 0x2931, "\000" 
+    IDC_COMBO_VIOLATION, 0x403, 17, 0
+0xa5ce, 0xb4b7, 0xc5d0, 0xc5ba, 0xc6b5, 0x3128, 0x3033, 0x2932, "\000" 
+    IDC_COMBO_VIOLATION, 0x403, 16, 0
+0xacb3, 0xd9cb, 0xd225, 0xcfd4, 0x28c2, 0x3331, 0x3330, 0x0029, 
+    IDC_COMBO_VIOLATION, 0x403, 16, 0
+0xacb3, 0xd9cb, 0xd225, 0xc9d4, 0x28cf, 0x3631, 0x3330, 0x0029, 
+    IDC_COMBO_VIOLATION, 0x403, 1, 0
+"\000" 
+    IDC_COMBO_CARCOLOR, 0x403, 5, 0
+0xe4c6, 0xfbcb, "\000" 
+    IDC_COMBO_CARCOLOR, 0x403, 5, 0
+0xd7b0, 0xabc9, "\000" 
+    IDC_COMBO_CARCOLOR, 0x403, 5, 0
+0xd2bb, 0xf8d2, "\000" 
+    IDC_COMBO_CARCOLOR, 0x403, 5, 0
+0xd2bb, 0xf8d2, "\000" 
+    IDC_COMBO_CARCOLOR, 0x403, 5, 0
+0xdaba, 0xabc9, "\000" 
+    IDC_COMBO_CARCOLOR, 0x403, 5, 0
+0xecba, 0xabc9, "\000" 
+    IDC_COMBO_CARCOLOR, 0x403, 5, 0
+0xeec9, 0xb6c0, "\000" 
+    IDC_COMBO_CARCOLOR, 0x403, 5, 0
+0xb6c0, 0xabc9, "\000" 
+    IDC_COMBO_CARCOLOR, 0x403, 5, 0
+0xc6bb, 0xabc9, "\000" 
+    IDC_COMBO_CARCOLOR, 0x403, 5, 0
+0xccc2, 0xabc9, "\000" 
+    IDC_COMBO_CARCOLOR, 0x403, 5, 0
+0xd8d7, 0xabc9, "\000" 
+    IDC_COMBO_CARCOLOR, 0x403, 5, 0
+0xdbb7, 0xabc9, "\000" 
+    IDC_COMBO_CARCOLOR, 0x403, 5, 0
+0xcfd7, 0xabc9, "\000" 
+    IDC_COMBO_CARCOLOR, 0x403, 2, 0
+0x0020, 
+    IDC_COMBO_PROTOCAL, 0x403, 6, 0
+0xe6b0, 0xbeb1, 0x0031, 
+    IDC_COMBO_PROTOCAL, 0x403, 6, 0
+0xe6b0, 0xbeb1, 0x0032, 
+    IDC_COMBO_PROTOCAL, 0x403, 6, 0
+0xe6b0, 0xbeb1, 0x0033, 
+    IDC_COMBO_PROTOCAL, 0x403, 1, 0
+"\000" 
+    IDC_COMBO_COMBINE, 0x403, 9, 0
+0xa5b5, 0xc5d5, 0xd6b7, 0xaabf, "\000" 
+    IDC_COMBO_COMBINE, 0x403, 5, 0
+0xcfba, 0xc9b3, "\000" 
+    IDC_COMBO_COMBINE, 0x403, 1, 0
+"\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 PicInfoTool(&A)..."
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\PicInfoTool.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "l.CHS\afxres.rc"      // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="PanelEx">
+</Property><Property Name="Solution File" Value="E:\Workspace\停车场管理系统升级版\source\PanelEx\PanelEx.sln">
+</Property><Property Name="User Options File" Value="E:\Workspace\停车场管理系统升级版\source\PanelEx\PanelEx.suo">
+</Property><Property Name="Date" Value="2012年9月13日">
+</Property><Property Name="Time" Value="19:56">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="PanelEx.sln" Description="File successfully backed up as E:\Workspace\停车场管理系统升级版\source\PanelEx\Backup\PanelEx.sln">
+</Event><Event ErrorLevel="0" Project="" Source="PanelEx.suo" Description="File successfully backed up as E:\Workspace\停车场管理系统升级版\source\PanelEx\Backup\PanelEx.suo">
+</Event><Event ErrorLevel="0" Project="PanelEx" Source="PanelEx\PanelEx.csproj" Description="Project file successfully backed up as E:\Workspace\停车场管理系统升级版\source\PanelEx\Backup\PanelEx\PanelEx.csproj">
+</Event><Event ErrorLevel="0" Project="PanelEx" Source="PanelEx\PanelEx.csproj.user" Description="Project user file successfully backed up as E:\Workspace\停车场管理系统升级版\source\PanelEx\Backup\PanelEx\PanelEx.csproj.user">
+</Event><Event ErrorLevel="0" Project="PanelEx" Source="PanelEx\PanelEx.cs" Description="File successfully backed up as E:\Workspace\停车场管理系统升级版\source\PanelEx\Backup\PanelEx\PanelEx.cs">
+</Event><Event ErrorLevel="0" Project="PanelEx" Source="PanelEx\Properties\AssemblyInfo.cs" Description="File successfully backed up as E:\Workspace\停车场管理系统升级版\source\PanelEx\Backup\PanelEx\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="PanelEx" Source="PanelEx\PanelEx.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="PanelEx" Source="PanelEx\PanelEx.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="WindowsFormsApplication1" Source="WindowsFormsApplication1\WindowsFormsApplication1.csproj" Description="Project file successfully backed up as E:\Workspace\停车场管理系统升级版\source\PanelEx\Backup\WindowsFormsApplication1\WindowsFormsApplication1.csproj">
+</Event><Event ErrorLevel="0" Project="WindowsFormsApplication1" Source="WindowsFormsApplication1\ComboxControl.cs" Description="File successfully backed up as E:\Workspace\停车场管理系统升级版\source\PanelEx\Backup\WindowsFormsApplication1\ComboxControl.cs">
+</Event><Event ErrorLevel="0" Project="WindowsFormsApplication1" Source="WindowsFormsApplication1\ComboxControl.Designer.cs" Description="File successfully backed up as E:\Workspace\停车场管理系统升级版\source\PanelEx\Backup\WindowsFormsApplication1\ComboxControl.Designer.cs">
+</Event><Event ErrorLevel="0" Project="WindowsFormsApplication1" Source="WindowsFormsApplication1\Form1.cs" Description="File successfully backed up as E:\Workspace\停车场管理系统升级版\source\PanelEx\Backup\WindowsFormsApplication1\Form1.cs">
+</Event><Event ErrorLevel="0" Project="WindowsFormsApplication1" Source="WindowsFormsApplication1\Form1.Designer.cs" Description="File successfully backed up as E:\Workspace\停车场管理系统升级版\source\PanelEx\Backup\WindowsFormsApplication1\Form1.Designer.cs">
+</Event><Event ErrorLevel="0" Project="WindowsFormsApplication1" Source="WindowsFormsApplication1\PageControl.cs" Description="File successfully backed up as E:\Workspace\停车场管理系统升级版\source\PanelEx\Backup\WindowsFormsApplication1\PageControl.cs">
+</Event><Event ErrorLevel="0" Project="WindowsFormsApplication1" Source="WindowsFormsApplication1\PageControl.Designer.cs" Description="File successfully backed up as E:\Workspace\停车场管理系统升级版\source\PanelEx\Backup\WindowsFormsApplication1\PageControl.Designer.cs">
+</Event><Event ErrorLevel="0" Project="WindowsFormsApplication1" Source="WindowsFormsApplication1\Program.cs" Description="File successfully backed up as E:\Workspace\停车场管理系统升级版\source\PanelEx\Backup\WindowsFormsApplication1\Program.cs">
+</Event><Event ErrorLevel="0" Project="WindowsFormsApplication1" Source="WindowsFormsApplication1\Properties\AssemblyInfo.cs" Description="File successfully backed up as E:\Workspace\停车场管理系统升级版\source\PanelEx\Backup\WindowsFormsApplication1\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="WindowsFormsApplication1" Source="WindowsFormsApplication1\Properties\Resources.Designer.cs" Description="File successfully backed up as E:\Workspace\停车场管理系统升级版\source\PanelEx\Backup\WindowsFormsApplication1\Properties\Resources.Designer.cs">
+</Event><Event ErrorLevel="0" Project="WindowsFormsApplication1" Source="WindowsFormsApplication1\Properties\Settings.Designer.cs" Description="File successfully backed up as E:\Workspace\停车场管理系统升级版\source\PanelEx\Backup\WindowsFormsApplication1\Properties\Settings.Designer.cs">
+</Event><Event ErrorLevel="0" Project="WindowsFormsApplication1" Source="WindowsFormsApplication1\Properties\Settings.settings" Description="File successfully backed up as E:\Workspace\停车场管理系统升级版\source\PanelEx\Backup\WindowsFormsApplication1\Properties\Settings.settings">
+</Event><Event ErrorLevel="0" Project="WindowsFormsApplication1" Source="WindowsFormsApplication1\ComboxControl.resx" Description="File successfully backed up as E:\Workspace\停车场管理系统升级版\source\PanelEx\Backup\WindowsFormsApplication1\ComboxControl.resx">
+</Event><Event ErrorLevel="0" Project="WindowsFormsApplication1" Source="WindowsFormsApplication1\Form1.resx" Description="File successfully backed up as E:\Workspace\停车场管理系统升级版\source\PanelEx\Backup\WindowsFormsApplication1\Form1.resx">
+</Event><Event ErrorLevel="0" Project="WindowsFormsApplication1" Source="WindowsFormsApplication1\PageControl.resx" Description="File successfully backed up as E:\Workspace\停车场管理系统升级版\source\PanelEx\Backup\WindowsFormsApplication1\PageControl.resx">
+</Event><Event ErrorLevel="0" Project="WindowsFormsApplication1" Source="WindowsFormsApplication1\Properties\Resources.resx" Description="File successfully backed up as E:\Workspace\停车场管理系统升级版\source\PanelEx\Backup\WindowsFormsApplication1\Properties\Resources.resx">
+</Event><Event ErrorLevel="0" Project="WindowsFormsApplication1" Source="WindowsFormsApplication1\WindowsFormsApplication1.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="WindowsFormsApplication1" Source="WindowsFormsApplication1\WindowsFormsApplication1.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="TextBoxEx" Source="TextBoxEx\TextBoxEx.csproj" Description="Project file successfully backed up as E:\Workspace\停车场管理系统升级版\source\PanelEx\Backup\TextBoxEx\TextBoxEx.csproj">
+</Event><Event ErrorLevel="0" Project="TextBoxEx" Source="TextBoxEx\Properties\AssemblyInfo.cs" Description="File successfully backed up as E:\Workspace\停车场管理系统升级版\source\PanelEx\Backup\TextBoxEx\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="TextBoxEx" Source="TextBoxEx\TextBoxEx.cs" Description="File successfully backed up as E:\Workspace\停车场管理系统升级版\source\PanelEx\Backup\TextBoxEx\TextBoxEx.cs">
+</Event><Event ErrorLevel="0" Project="TextBoxEx" Source="TextBoxEx\TextBoxEx.Designer.cs" Description="File successfully backed up as E:\Workspace\停车场管理系统升级版\source\PanelEx\Backup\TextBoxEx\TextBoxEx.Designer.cs">
+</Event><Event ErrorLevel="0" Project="TextBoxEx" Source="TextBoxEx\TextBoxEx.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="TextBoxEx" Source="TextBoxEx\TextBoxEx.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="ComboBoxEx" Source="ComboBoxEx\ComboBoxEx.csproj" Description="Project file successfully backed up as E:\Workspace\停车场管理系统升级版\source\PanelEx\Backup\ComboBoxEx\ComboBoxEx.csproj">
+</Event><Event ErrorLevel="0" Project="ComboBoxEx" Source="ComboBoxEx\ComboBoxEx.cs" Description="File successfully backed up as E:\Workspace\停车场管理系统升级版\source\PanelEx\Backup\ComboBoxEx\ComboBoxEx.cs">
+</Event><Event ErrorLevel="0" Project="ComboBoxEx" Source="ComboBoxEx\ComboBoxEx.Designer.cs" Description="File successfully backed up as E:\Workspace\停车场管理系统升级版\source\PanelEx\Backup\ComboBoxEx\ComboBoxEx.Designer.cs">
+</Event><Event ErrorLevel="0" Project="ComboBoxEx" Source="ComboBoxEx\ImageComboBoxItem.cs" Description="File successfully backed up as E:\Workspace\停车场管理系统升级版\source\PanelEx\Backup\ComboBoxEx\ImageComboBoxItem.cs">
+</Event><Event ErrorLevel="0" Project="ComboBoxEx" Source="ComboBoxEx\Properties\AssemblyInfo.cs" Description="File successfully backed up as E:\Workspace\停车场管理系统升级版\source\PanelEx\Backup\ComboBoxEx\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="ComboBoxEx" Source="ComboBoxEx\Resources1.Designer.cs" Description="File successfully backed up as E:\Workspace\停车场管理系统升级版\source\PanelEx\Backup\ComboBoxEx\Resources1.Designer.cs">
+</Event><Event ErrorLevel="0" Project="ComboBoxEx" Source="ComboBoxEx\Resources\DropDown.bmp" Description="File successfully backed up as E:\Workspace\停车场管理系统升级版\source\PanelEx\Backup\ComboBoxEx\Resources\DropDown.bmp">
+</Event><Event ErrorLevel="0" Project="ComboBoxEx" Source="ComboBoxEx\Resources1.resx" Description="File successfully backed up as E:\Workspace\停车场管理系统升级版\source\PanelEx\Backup\ComboBoxEx\Resources1.resx">
+</Event><Event ErrorLevel="0" Project="ComboBoxEx" Source="ComboBoxEx\ComboBoxEx.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="ComboBoxEx" Source="ComboBoxEx\ComboBoxEx.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="DateTimePickerEx" Source="DateTimePickerEx\DateTimePickerEx.csproj" Description="Project file successfully backed up as E:\Workspace\停车场管理系统升级版\source\PanelEx\Backup\DateTimePickerEx\DateTimePickerEx.csproj">
+</Event><Event ErrorLevel="0" Project="DateTimePickerEx" Source="DateTimePickerEx\DateTimePickerEx.cs" Description="File successfully backed up as E:\Workspace\停车场管理系统升级版\source\PanelEx\Backup\DateTimePickerEx\DateTimePickerEx.cs">
+</Event><Event ErrorLevel="0" Project="DateTimePickerEx" Source="DateTimePickerEx\DateTimePickerEx.Designer.cs" Description="File successfully backed up as E:\Workspace\停车场管理系统升级版\source\PanelEx\Backup\DateTimePickerEx\DateTimePickerEx.Designer.cs">
+</Event><Event ErrorLevel="0" Project="DateTimePickerEx" Source="DateTimePickerEx\Properties\AssemblyInfo.cs" Description="File successfully backed up as E:\Workspace\停车场管理系统升级版\source\PanelEx\Backup\DateTimePickerEx\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="DateTimePickerEx" Source="DateTimePickerEx\Resource1.Designer.cs" Description="File successfully backed up as E:\Workspace\停车场管理系统升级版\source\PanelEx\Backup\DateTimePickerEx\Resource1.Designer.cs">
+</Event><Event ErrorLevel="0" Project="DateTimePickerEx" Source="DateTimePickerEx\Resources\DropDown.bmp" Description="File successfully backed up as E:\Workspace\停车场管理系统升级版\source\PanelEx\Backup\DateTimePickerEx\Resources\DropDown.bmp">
+</Event><Event ErrorLevel="0" Project="DateTimePickerEx" Source="DateTimePickerEx\Resource1.resx" Description="File successfully backed up as E:\Workspace\停车场管理系统升级版\source\PanelEx\Backup\DateTimePickerEx\Resource1.resx">
+</Event><Event ErrorLevel="0" Project="DateTimePickerEx" Source="DateTimePickerEx\DateTimePickerEx.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="DateTimePickerEx" Source="DateTimePickerEx\DateTimePickerEx.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="PanelEx.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="PanelEx.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="PanelEx" Source="PanelEx\PanelEx.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="WindowsFormsApplication1" Source="WindowsFormsApplication1\WindowsFormsApplication1.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="TextBoxEx" Source="TextBoxEx\TextBoxEx.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="ComboBoxEx" Source="ComboBoxEx\ComboBoxEx.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="DateTimePickerEx" Source="DateTimePickerEx\DateTimePickerEx.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

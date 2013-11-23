@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="HikIpcDemo">
+</Property><Property Name="Solution File" Value="E:\其他项目\HikIpcDemo\HikIpcDemo\HikIpcDemo.sln">
+</Property><Property Name="User Options File" Value="E:\其他项目\HikIpcDemo\HikIpcDemo\HikIpcDemo.suo">
+</Property><Property Name="Date" Value="2012年8月12日">
+</Property><Property Name="Time" Value="17:52">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="HikIpcDemo.sln" Description="File successfully backed up as E:\其他项目\HikIpcDemo\HikIpcDemo\Backup\HikIpcDemo.sln">
+</Event><Event ErrorLevel="0" Project="" Source="HikIpcDemo.suo" Description="File successfully backed up as E:\其他项目\HikIpcDemo\HikIpcDemo\Backup\HikIpcDemo.suo">
+</Event><Event ErrorLevel="0" Project="HikIpcDemo" Source="HikIpcDemo\HikIpcDemo.csproj" Description="Project file successfully backed up as E:\其他项目\HikIpcDemo\HikIpcDemo\Backup\HikIpcDemo\HikIpcDemo.csproj">
+</Event><Event ErrorLevel="0" Project="HikIpcDemo" Source="HikIpcDemo\Form1.cs" Description="File successfully backed up as E:\其他项目\HikIpcDemo\HikIpcDemo\Backup\HikIpcDemo\Form1.cs">
+</Event><Event ErrorLevel="0" Project="HikIpcDemo" Source="HikIpcDemo\Form1.Designer.cs" Description="File successfully backed up as E:\其他项目\HikIpcDemo\HikIpcDemo\Backup\HikIpcDemo\Form1.Designer.cs">
+</Event><Event ErrorLevel="0" Project="HikIpcDemo" Source="HikIpcDemo\Program.cs" Description="File successfully backed up as E:\其他项目\HikIpcDemo\HikIpcDemo\Backup\HikIpcDemo\Program.cs">
+</Event><Event ErrorLevel="0" Project="HikIpcDemo" Source="HikIpcDemo\Properties\AssemblyInfo.cs" Description="File successfully backed up as E:\其他项目\HikIpcDemo\HikIpcDemo\Backup\HikIpcDemo\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="HikIpcDemo" Source="HikIpcDemo\Properties\Resources.Designer.cs" Description="File successfully backed up as E:\其他项目\HikIpcDemo\HikIpcDemo\Backup\HikIpcDemo\Properties\Resources.Designer.cs">
+</Event><Event ErrorLevel="0" Project="HikIpcDemo" Source="HikIpcDemo\Properties\Settings.Designer.cs" Description="File successfully backed up as E:\其他项目\HikIpcDemo\HikIpcDemo\Backup\HikIpcDemo\Properties\Settings.Designer.cs">
+</Event><Event ErrorLevel="0" Project="HikIpcDemo" Source="HikIpcDemo\SdkClass.cs" Description="File successfully backed up as E:\其他项目\HikIpcDemo\HikIpcDemo\Backup\HikIpcDemo\SdkClass.cs">
+</Event><Event ErrorLevel="0" Project="HikIpcDemo" Source="HikIpcDemo\Properties\Settings.settings" Description="File successfully backed up as E:\其他项目\HikIpcDemo\HikIpcDemo\Backup\HikIpcDemo\Properties\Settings.settings">
+</Event><Event ErrorLevel="0" Project="HikIpcDemo" Source="HikIpcDemo\Form1.resx" Description="File successfully backed up as E:\其他项目\HikIpcDemo\HikIpcDemo\Backup\HikIpcDemo\Form1.resx">
+</Event><Event ErrorLevel="0" Project="HikIpcDemo" Source="HikIpcDemo\Properties\Resources.resx" Description="File successfully backed up as E:\其他项目\HikIpcDemo\HikIpcDemo\Backup\HikIpcDemo\Properties\Resources.resx">
+</Event><Event ErrorLevel="0" Project="HikIpcDemo" Source="HikIpcDemo\HikIpcDemo.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="HikIpcDemo" Source="HikIpcDemo\HikIpcDemo.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="HikIpcDemo.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="HikIpcDemo.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="HikIpcDemo" Source="HikIpcDemo\HikIpcDemo.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

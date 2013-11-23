@@ -1,0 +1,422 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\ParkingDemo.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""l.CHS\\afxres.rc""      // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\ParkingDemo.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 ParkingDemo"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,21,20
+    LTEXT           "ParkingDemo，1.0 版",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2013",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "确定",IDOK,113,41,50,14,WS_GROUP
+END
+
+IDD_PARKINGDEMO_DIALOG DIALOGEX 0, 0, 782, 443
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "ParkingDemo"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_TREE_DEVICE,"SysTreeView32",WS_BORDER | WS_HSCROLL | WS_TABSTOP,7,7,98,429
+    LTEXT           "",IDC_STATIC_AREA,107,7,559,429,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "开启牌识上传",IDC_BUTTON_ENABLE_UPLOAD_DATA,681,271,50,12
+    PUSHBUTTON      "设置",IDC_BUTTON_UPLOAD_CFG,682,220,50,12
+    LTEXT           "主机IP",IDC_STATIC,680,144,22,9
+    EDITTEXT        IDC_EDT_HOST_IP,708,141,56,12,ES_AUTOHSCROLL
+    LTEXT           "主机端口",IDC_STATIC,680,160,29,9
+    EDITTEXT        IDC_EDT_HOST_PORT,728,156,36,12,ES_AUTOHSCROLL
+    CONTROL         "暂停上传",IDC_CK_STOP_UPLOAD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,683,201,41,11
+    LTEXT           "上传间隔时间",IDC_STATIC,680,173,43,9
+    EDITTEXT        IDC_EDT_UPLOAD_INTERVAL,728,170,36,12,ES_AUTOHSCROLL
+    LTEXT           "上传超时时间",IDC_STATIC,680,186,43,9
+    EDITTEXT        IDC_EDT_UPLOAD_TIMEOUT,728,184,36,12,ES_AUTOHSCROLL
+    GROUPBOX        "设置Netro设备上传参数",IDC_STATIC,672,128,96,111
+    CONTROL         "图片数据",IDC_CHECK_PIC_DATA,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,683,257,37,10
+END
+
+IDD_OUTPUT_DIALOG DIALOGEX 0, 0, 161, 114
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_BORDER | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "",IDC_STATIC_LEFT_PLATE_NO,22,0,49,13,WS_BORDER
+    LTEXT           "",IDC_STATIC_RIGHT_PLATE_NO,100,0,49,13,WS_BORDER
+    LTEXT           "",IDC_STATIC_LEFT_PLACE_NO,29,103,35,10,WS_BORDER
+    LTEXT           "",IDC_STATIC_RIGHT_PLACE_NO,106,103,35,10,WS_BORDER
+    LTEXT           "",IDC_STATIC_PreView,2,12,157,90,0,WS_EX_STATICEDGE
+END
+
+IDD_ADDDEVICE_DIALOG DIALOGEX 0, 0, 229, 128
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "添加设备信息"
+FONT 9, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    LTEXT           "IP地址",IDC_STATIC,20,33,21,8
+    LTEXT           "端口",IDC_STATIC,148,33,16,8
+    EDITTEXT        IDC_EDIT_PORT,167,31,41,13,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "用户名",IDC_STATIC,20,56,22,8
+    EDITTEXT        IDC_EDIT_USERNAME,56,52,83,13,ES_AUTOHSCROLL
+    LTEXT           "密码",IDC_STATIC,148,56,15,8
+    EDITTEXT        IDC_EDIT_PASSWORD,167,52,40,13,ES_PASSWORD | ES_AUTOHSCROLL
+    PUSHBUTTON      "取消",IDCANCEL,129,100,39,14
+    PUSHBUTTON      "确定",IDOK,70,100,39,14
+    LTEXT           "起始车位",IDC_STATIC,20,73,28,8
+    EDITTEXT        IDC_EDIT_BEGIN_PLACE_NO,56,69,40,13,ES_AUTOHSCROLL
+    LTEXT           "设备名称",IDC_STATIC_PKN,19,12,28,8
+    EDITTEXT        IDC_EDIT_PARKING_NAME,56,10,83,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DEVICE_IP,56,31,83,13,ES_AUTOHSCROLL
+END
+
+IDD_IPACCESS_CFG_DIALOG DIALOGEX 0, 0, 431, 307
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "IP设备接入管理"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "刷新",IDC_BTN_REFRESH,345,281,50,14
+    PUSHBUTTON      "保存",IDC_BTN_SAVE,287,282,50,14
+    GROUPBOX        "IP设备接入管理",IDC_STATIC,7,3,415,270
+    CONTROL         "",IDC_LIST_IP_CHAN,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,16,35,396,116,WS_EX_STATICEDGE
+    COMBOBOX        IDC_COMBO_STREAM_TYPE,60,155,113,61,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "取流类型:",IDC_STATIC,21,158,37,8
+    LTEXT           "组号:",IDC_STATIC,18,19,21,9
+    COMBOBOX        IDC_COMBO_CHANNEL_GROUP_NO,47,17,48,55,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "启用",IDC_BTN_ENABLE,296,181,50,14
+    PUSHBUTTON      "添加",IDC_BTN_ADD_IP_CHAN,296,213,50,14
+    PUSHBUTTON      "删除",IDC_BTN_DELETE,296,229,50,14
+    EDITTEXT        IDC_DEVICE_IP,64,193,83,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DEVICE_USERNAME,202,191,68,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DEVICE_PORT,64,209,83,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DEVICE_PSW,202,205,68,12,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_CHAN,64,224,83,12,ES_AUTOHSCROLL
+    LTEXT           "用户名",IDC_STATIC_USER,164,192,25,10
+    LTEXT           "密码",IDC_STATIC_PASS,164,209,26,10
+    LTEXT           "IP地址",IDC_STATIC_IP,32,194,26,10
+    LTEXT           "端口",IDC_STATIC_PORT,32,211,26,10
+    LTEXT           "通道号",IDC_STATIC_CHANNEL,32,226,26,10
+    GROUPBOX        "添加通道信息",IDC_STATIC_DEVICE,22,178,265,79
+    LTEXT           "协议",IDC_STATIC_DEV_TYPE,32,241,25,10
+    COMBOBOX        IDC_COMBO_PROTYPE,64,239,83,70,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "刷新",IDC_BUTTON_UPDATE_PRO_LIST,162,239,34,13
+    GROUPBOX        "URL配置",IDC_STATIC_URLCFG,18,167,339,99
+END
+
+IDD_PLACEINFO_DIALOG DIALOGEX 0, 0, 251, 122
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "车位信息"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,61,85,50,14
+    PUSHBUTTON      "取消",IDCANCEL,141,85,50,14
+    LTEXT           "通道号",IDC_STATIC,29,18,29,10
+    LTEXT           "左车位号",IDC_STATIC,29,47,34,10
+    LTEXT           "右车位号",IDC_STATIC,136,47,34,10
+    EDITTEXT        IDC_EDIT_CHAN_NO,69,12,40,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_LEFT_PLACE_NO,69,41,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_RIGHT_PLACE_NO,177,41,40,14,ES_AUTOHSCROLL
+END
+
+IDD_DLG_ITS_UPLOAD DIALOGEX 0, 0, 261, 202
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "数据上传参数配置"
+FONT 9, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "退出",IDOK,174,180,50,14
+    DEFPUSHBUTTON   "设置",IDC_BTN_SET,105,180,50,14
+    DEFPUSHBUTTON   "获取",IDC_BTN_GET,28,181,50,14
+    COMBOBOX        IDC_CMB_HOST_INDEX,19,12,73,38,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "上传参数",IDC_STATIC,8,33,243,109
+    LTEXT           "主机IP",IDC_STATIC,15,47,26,10
+    EDITTEXT        IDC_EDT_HOST_IP,47,45,70,13,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "确定",IDC_ENSURE,103,11,50,14
+    LTEXT           "主机端口",IDC_STATIC,123,47,33,10
+    EDITTEXT        IDC_EDT_HOST_PORT,163,45,42,13,ES_AUTOHSCROLL
+    CONTROL         "暂停上传",IDC_CK_STOP_UPLOAD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,70,48,13
+    LTEXT           "上传策略",IDC_STATIC,79,71,33,10
+    COMBOBOX        IDC_CMB_UPLOAD_STRATEGY,122,69,73,38,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "上传间隔时间",IDC_STATIC,16,94,50,10
+    EDITTEXT        IDC_EDT_UPLOAD_INTERVAL,67,91,42,13,ES_AUTOHSCROLL
+    LTEXT           "上传超时时间",IDC_STATIC,130,92,50,10
+    EDITTEXT        IDC_EDT_UPLOAD_TIMEOUT,181,89,42,13,ES_AUTOHSCROLL
+    CONTROL         "卡口数据",IDC_CK_POST,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,118,44,12
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "TODO: <公司名>"
+            VALUE "FileDescription", "TODO: <文件说明>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "ParkingDemo.exe"
+            VALUE "LegalCopyright", "TODO: (C) <公司名>。保留所有权利。"
+            VALUE "OriginalFilename", "ParkingDemo.exe"
+            VALUE "ProductName", "TODO: <产品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_PARKINGDEMO_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 775
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 436
+    END
+
+    IDD_OUTPUT_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 154
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 107
+    END
+
+    IDD_ADDDEVICE_DIALOG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 163
+        BOTTOMMARGIN, 97
+    END
+
+    IDD_IPACCESS_CFG_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 424
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 300
+    END
+
+    IDD_PLACEINFO_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 244
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 115
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU_TREE_DEVICE MENU 
+BEGIN
+    POPUP "TreeDevice"
+    BEGIN
+        MENUITEM "登录",                          ID_TREEDEVICE_LOGIN
+        MENUITEM "播放",                          ID_TREE_DEVICE_PLAY
+        MENUITEM "停止",                          ID_TREE_DEVICE_STOP_PLAY
+        MENUITEM "注销",                          ID_TREEDEVICE_LOGOUT
+        MENUITEM "删除",                          ID_TREE_DEVICE_DELETE
+        MENUITEM "属性",                          ID_TREEDEVICE_PROPERTY
+    END
+END
+
+IDR_MENU_TREE_CHAN MENU 
+BEGIN
+    POPUP "CHAN"
+    BEGIN
+        MENUITEM "车位信息",                        ID_CHAN_PLACE_INFO
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_IPACCESS_CFG_DIALOG DLGINIT
+BEGIN
+    IDC_COMBO_STREAM_TYPE, 0x403, 9, 0
+0xe8c9, 0xb8b1, 0xa1c8, 0xf7c1, "\000" 
+    IDC_COMBO_STREAM_TYPE, 0x403, 11, 0
+0xf7c1, 0xbdc3, 0xe5cc, 0xa1c8, 0xf7c1, "\000" 
+    IDC_COMBO_STREAM_TYPE, 0x403, 13, 0
+0x5049, 0x6553, 0x7672, 0x7265, 0xa1c8, 0xf7c1, "\000" 
+    IDC_COMBO_STREAM_TYPE, 0x403, 20, 0
+0x5049, 0x6553, 0x7672, 0x7265, 0xc126, 0xc3f7, 0xccbd, 0xc8e5, 0xc1a1, 
+0x00f7, 
+    IDC_COMBO_STREAM_TYPE, 0x403, 16, 0
+0xf7c1, 0xbdc3, 0xe5cc, 0xa1c8, 0xf7c1, 0x7528, 0x6c72, 0x0029, 
+    IDC_COMBO_STREAM_TYPE, 0x403, 13, 0
+0x6145, 0x7973, 0x4444, 0x534e, 0xa1c8, 0xf7c1, "\000" 
+    IDC_COMBO_CHANNEL_GROUP_NO, 0x403, 2, 0
+0x0031, 
+    IDC_COMBO_PROTYPE, 0x403, 9, 0
+0xa3ba, 0xb5bf, 0xfecd, 0xd3ca, "\000" 
+    IDC_COMBO_PROTYPE, 0x403, 5, 0
+0xc9cb, 0xc2cf, "\000" 
+    IDC_COMBO_PROTYPE, 0x403, 5, 0
+0xf7cb, 0xe1c4, "\000" 
+    0
+END
+
+IDD_DLG_ITS_UPLOAD DLGINIT
+BEGIN
+    IDC_CMB_HOST_INDEX, 0x403, 7, 0
+0xf7d6, 0xfabb, 0xbbd2, "\000" 
+    IDC_CMB_HOST_INDEX, 0x403, 7, 0
+0xf7d6, 0xfabb, 0xfeb6, "\000" 
+    IDC_CMB_UPLOAD_STRATEGY, 0x403, 17, 0
+0xeed7, 0xc2d0, 0xfdca, 0xddbe, 0xc5d3, 0xc8cf, 0xcfc9, 0xabb4, "\000" 
+    IDC_CMB_UPLOAD_STRATEGY, 0x403, 17, 0
+0xb4b0, 0xd5d5, 0xa8cd, 0xd0d0, 0xb1ca, 0xe4bc, 0xcfc9, 0xabb4, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 ParkingDemo(&A)..."
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\ParkingDemo.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "l.CHS\afxres.rc"      // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

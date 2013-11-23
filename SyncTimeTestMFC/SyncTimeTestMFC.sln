@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SyncTimeTestMFC", "SyncTimeTestMFC\SyncTimeTestMFC.vcproj", "{5182F343-D4CC-4FB1-8D75-3B2562981EE1}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VPRCtrl", "..\VMS\trunk\停车场管理软件基线\牌识动态库100920\VPRCtrl\VPRCtrl\VPRCtrl.vcproj", "{AFF2E1BD-6E8D-4D72-A593-010B900040C9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5182F343-D4CC-4FB1-8D75-3B2562981EE1}.Debug|Win32.ActiveCfg = Debug|Win32
+		{5182F343-D4CC-4FB1-8D75-3B2562981EE1}.Debug|Win32.Build.0 = Debug|Win32
+		{5182F343-D4CC-4FB1-8D75-3B2562981EE1}.Release|Win32.ActiveCfg = Release|Win32
+		{5182F343-D4CC-4FB1-8D75-3B2562981EE1}.Release|Win32.Build.0 = Release|Win32
+		{AFF2E1BD-6E8D-4D72-A593-010B900040C9}.Debug|Win32.ActiveCfg = Debug|Win32
+		{AFF2E1BD-6E8D-4D72-A593-010B900040C9}.Debug|Win32.Build.0 = Debug|Win32
+		{AFF2E1BD-6E8D-4D72-A593-010B900040C9}.Release|Win32.ActiveCfg = Release|Win32
+		{AFF2E1BD-6E8D-4D72-A593-010B900040C9}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,60 @@
+<html>
+    <head>
+    <title>测试OCX页面调用</title>
+
+    <script language="javascript" type="text/javascript">
+        function getPrint(elementid) {
+            var PrintOperation = document.getElementById(elementid);
+            return PrintOperation;
+        }
+
+	function GetSize(str) {
+     ///<summary>获得字符串实际长度，中文2，英文1</summary>
+     ///<param name="str">要获得长度的字符串</param>
+            var realLength = 0, len = str.length, charCode = -1;
+            for (var i = 0; i < len; i++) {
+                charCode = str.charCodeAt(i);
+                if (charCode >= 0 && charCode <= 128) realLength += 1;
+                else realLength += 2;
+            }
+            return realLength;
+        }
+
+        function SendPrintData() {
+	    var PrintOperation = getPrint("PrintOperation");
+	    if (PrintOperation) {
+                var data = document.getElementById('DataText').value;
+		alert(data);
+	        var count = GetSize(data);
+		alert(count);
+                var resultinfo = PrintOperation.SendPrintData(data,count,'GK888t');
+	    }
+        }
+
+        function PrintTest() {
+            var PrintOperation = getPrint("PrintOperation");
+            if (PrintOperation) {
+                var resultinfo = PrintOperation.PrintTest();
+            }
+        }
+    </script>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div style="width: 0; height: 0;">
+            <object classid="clsid:4FD00B5E-4C1F-47A1-BB65-5DB8C8BB74EF" standby="Waiting..." id="PrintOperation" width="0" height="0" name="PrintOperation"
+                title="指令插件">
+            </object>
+    </div>
+    <br />
+    <div>
+        <input type="text" id="DataText" style="width:950px;height:20px"></input>
+    </div>
+    <br />
+    <div id="controls">
+	<input type="button" onclick="SendPrintData()" value="SendPrintData" />
+        <input type="button" onclick="PrintTest()" value="PrintTest" />
+    </div>
+    </form>
+</body>
+</html>

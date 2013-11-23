@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MakeDogTool", "MakeDogTool\MakeDogTool.vcproj", "{0C4C8A89-7FEE-49C5-B3C7-BB1A00D7B2B8}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Encrypt", "..\停车场管理软件绑定车道加密狗封装库\Encrypt\Encrypt.vcproj", "{EEAE06DE-58F9-4B77-8986-B415A22243B0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0C4C8A89-7FEE-49C5-B3C7-BB1A00D7B2B8}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0C4C8A89-7FEE-49C5-B3C7-BB1A00D7B2B8}.Debug|Win32.Build.0 = Debug|Win32
+		{0C4C8A89-7FEE-49C5-B3C7-BB1A00D7B2B8}.Release|Win32.ActiveCfg = Release|Win32
+		{0C4C8A89-7FEE-49C5-B3C7-BB1A00D7B2B8}.Release|Win32.Build.0 = Release|Win32
+		{EEAE06DE-58F9-4B77-8986-B415A22243B0}.Debug|Win32.ActiveCfg = Debug|Win32
+		{EEAE06DE-58F9-4B77-8986-B415A22243B0}.Debug|Win32.Build.0 = Debug|Win32
+		{EEAE06DE-58F9-4B77-8986-B415A22243B0}.Release|Win32.ActiveCfg = Release|Win32
+		{EEAE06DE-58F9-4B77-8986-B415A22243B0}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

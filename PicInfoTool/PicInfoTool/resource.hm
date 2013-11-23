@@ -1,0 +1,4 @@
+// Microsoft Visual C++ generated Help ID include file.
+// Used by PicInfoTool.rc
+//
+#define HIDC_LOCATION                   0x8066043d    // IDD_PICINFOTOOL_DIALOG

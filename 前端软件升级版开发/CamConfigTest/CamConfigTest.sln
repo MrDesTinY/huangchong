@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CamConfigTest", "CamConfigTest\CamConfigTest.vcproj", "{731CA8A9-D173-4DE4-A80F-DFC7CA9612C4}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CamConfig", "..\CamConfig\CamConfig\CamConfig.vcproj", "{3767F69E-0DE0-473C-A11D-9467ECFE616F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{731CA8A9-D173-4DE4-A80F-DFC7CA9612C4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{731CA8A9-D173-4DE4-A80F-DFC7CA9612C4}.Debug|Win32.Build.0 = Debug|Win32
+		{731CA8A9-D173-4DE4-A80F-DFC7CA9612C4}.Release|Win32.ActiveCfg = Release|Win32
+		{731CA8A9-D173-4DE4-A80F-DFC7CA9612C4}.Release|Win32.Build.0 = Release|Win32
+		{3767F69E-0DE0-473C-A11D-9467ECFE616F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3767F69E-0DE0-473C-A11D-9467ECFE616F}.Debug|Win32.Build.0 = Debug|Win32
+		{3767F69E-0DE0-473C-A11D-9467ECFE616F}.Release|Win32.ActiveCfg = Release|Win32
+		{3767F69E-0DE0-473C-A11D-9467ECFE616F}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
