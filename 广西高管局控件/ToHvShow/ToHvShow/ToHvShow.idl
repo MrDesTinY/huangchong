@@ -1,0 +1,76 @@
+// ToHvShow.idl : type library source for ActiveX Control project.
+
+// This file will be processed by the MIDL compiler tool to
+// produce the type library (ToHvShow.tlb) that will become a resource in
+// ToHvShow.ocx.
+
+#include <olectl.h>
+#include <idispids.h>
+
+[ uuid(D2FE37DE-9320-4DC7-9B78-BC776A0D6925), version(1.0),
+  helpfile("ToHvShow.hlp"),
+  helpstring("ToHvShow ActiveX Control module"),
+  control ]
+library ToHvShowLib
+{
+	importlib(STDOLE_TLB);
+
+	//  Primary dispatch interface for CToHvShowCtrl
+
+	[ uuid(C683820E-70D4-43E5-A03D-BBB945F2EB2A),
+	  helpstring("Dispatch interface for ToHvShow Control")]
+	dispinterface _DToHvShow
+	{
+		properties:
+			[id(1) , helpstring("property RecvSnapImageFlag")] LONG RecvSnapImageFlag;
+			[id(2) , helpstring("property RecvPlateImageFlag")] LONG RecvPlateImageFlag;
+			[id(3) , helpstring("property RecvPlateBinImageFlag")] LONG RecvPlateBinImageFlag;
+			[id(4) , helpstring("property RecvSnapDriverImageFlag")] LONG RecvSnapDriverImageFlag;
+			[id(5) , helpstring("property AutoSaveFlag")] VARIANT_BOOL AutoSaveFlag;
+			[id(6) , helpstring("property ShowPlateImage")] BSTR ShowPlateImage;
+			[id(7) , helpstring("property ShowFirstImage")] BSTR ShowFirstImage;
+			[id(8) , helpstring("property ShowSecondImage")] BSTR ShowSecondImage;
+			[id(9) , helpstring("property ShowPlateResult")] BSTR ShowPlateResult;
+			[id(25) , helpstring("property LogFile")] LONG LogFile;
+	methods:
+		[id(10), helpstring("method ConnectTo")] void ConnectTo(BSTR strAddr);
+		[id(11), helpstring("method GetStatus")] LONG GetStatus(void);
+		[id(12), helpstring("method Disconnect")] void Disconnect(void);
+		[id(13), helpstring("method SetImgSavePath")] void SetImgSavePath(BSTR strPath);
+		[id(14), helpstring("method GetPlate")] BSTR GetPlate(void);
+		[id(15), helpstring("method GetPlateColor")] BSTR GetPlateColor(void);
+		[id(16), helpstring("method GetPlateInfo")] BSTR GetPlateInfo(void);
+		[id(17), helpstring("method SaveSnapImage")] LONG SaveSnapImage(BSTR strFileName);
+		[id(18), helpstring("method SaveSnapImage2")] LONG SaveSnapImage2(BSTR strFileName);
+		[id(19), helpstring("method SavePlateImage")] LONG SavePlateImage(BSTR strFileName);
+		[id(20), helpstring("method SavePlateBinImage")] LONG SavePlateBinImage(BSTR strFileName);
+		[id(21), helpstring("method SavePlateBin2BMP")] LONG SavePlateBin2BMP(BSTR strFileName);
+		[id(22), helpstring("method GetImageRecTime")] BSTR GetImageRecTime(LONG lImgType);
+		[id(23), helpstring("method GetImageFileName")] BSTR GetImageFileName(LONG lImgType);
+		[id(24), helpstring("method GetImageDataFromMem")] BSTR GetImageDataFromMem(LONG lImgType, VARIANT* pVarImg, LONG* lImgSize);
+	};
+
+	//  Event dispatch interface for CToHvShowCtrl
+
+	[ uuid(FB8A8CB8-869A-4457-8A97-E68E58D2A8A0),
+	  helpstring("Event interface for ToHvShow Control") ]
+	dispinterface _DToHvShowEvents
+	{
+		properties:
+			//  Event interface has no properties
+
+		methods:
+			[id(1)] void OnReceivePlate(void);
+	};
+
+	//  Class information for CToHvShowCtrl
+
+	[ uuid(B38E8E73-1451-470F-8E0F-E71B9AFB3F53),
+	  helpstring("ToHvShow Control"), control ]
+	coclass ToHvShow
+	{
+		[default] dispinterface _DToHvShow;
+		[default, source] dispinterface _DToHvShowEvents;
+	};
+
+};

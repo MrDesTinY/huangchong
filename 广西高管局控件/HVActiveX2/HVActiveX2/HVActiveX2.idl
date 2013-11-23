@@ -1,0 +1,76 @@
+// HVActiveX2.idl : type library source for ActiveX Control project.
+
+// This file will be processed by the MIDL compiler tool to
+// produce the type library (HVActiveX2.tlb) that will become a resource in
+// HVActiveX2.ocx.
+
+#include <olectl.h>
+#include <idispids.h>
+
+[ uuid(4157D2EB-7391-4182-A52A-0A55205DD47A), version(1.0),
+  helpfile("HVActiveX2.hlp"),
+  helpstring("HVActiveX2 ActiveX Control module"),
+  control ]
+library HVActiveX2Lib
+{
+	importlib(STDOLE_TLB);
+
+	//  Primary dispatch interface for CHVActiveX2Ctrl
+
+	[ uuid(1726300F-F81A-4CB8-A847-B8497293D6B3),
+	  helpstring("Dispatch interface for HVActiveX2 Control")]
+	dispinterface _DHVActiveX2
+	{
+		properties:
+			[id(1) , helpstring("property RecvSnapImageFlag")] LONG RecvSnapImageFlag;
+			[id(2) , helpstring("property RecvPlateImageFlag")] LONG RecvPlateImageFlag;
+			[id(3) , helpstring("property RecvPlateBinImageFlag")] LONG RecvPlateBinImageFlag;
+			[id(4) , helpstring("property RecvSnapDriverImageFlag")] LONG RecvSnapDriverImageFlag;
+			[id(5) , helpstring("property AutoSaveFlag")] VARIANT_BOOL AutoSaveFlag;
+			[id(6) , helpstring("property ShowPlateImage")] BSTR ShowPlateImage;
+			[id(7) , helpstring("property ShowFirstImage")] BSTR ShowFirstImage;
+			[id(8) , helpstring("property ShowSecondImage")] BSTR ShowSecondImage;
+			[id(9) , helpstring("property ShowPlateResult")] BSTR ShowPlateResult;
+			[id(25) , helpstring("property LogFile")] LONG LogFile;
+	methods:
+		[id(10), helpstring("method ConnectTo")] void ConnectTo(BSTR strAddr);
+		[id(11), helpstring("method GetStatus")] LONG GetStatus(void);
+		[id(12), helpstring("method Disconnect")] void Disconnect(void);
+		[id(13), helpstring("method SetImgSavePath")] void SetImgSavePath(BSTR strPath);
+		[id(14), helpstring("method GetPlate")] BSTR GetPlate(void);
+		[id(15), helpstring("method GetPlateColor")] BSTR GetPlateColor(void);
+		[id(16), helpstring("method GetPlateInfo")] BSTR GetPlateInfo(void);
+		[id(17), helpstring("method SaveSnapImage")] LONG SaveSnapImage(BSTR strFileName);
+		[id(18), helpstring("method SaveSnapImage2")] LONG SaveSnapImage2(BSTR strFileName);
+		[id(19), helpstring("method SavePlateImage")] LONG SavePlateImage(BSTR strFileName);
+		[id(20), helpstring("method SavePlateBinImage")] LONG SavePlateBinImage(BSTR strFileName);
+		[id(21), helpstring("method SavePlateBin2BMP")] LONG SavePlateBin2BMP(BSTR strFileName);
+		[id(22), helpstring("method GetImageRecTime")] BSTR GetImageRecTime(LONG lImgType);
+		[id(23), helpstring("method GetImageFileName")] BSTR GetImageFileName(LONG lImgType);
+		[id(24), helpstring("method GetImageDataFromMem")] BSTR GetImageDataFromMem(LONG lImgType, VARIANT* pVarImg, LONG* lImgSize);
+	};
+
+	//  Event dispatch interface for CHVActiveX2Ctrl
+
+	[ uuid(7C6CF805-5D3F-4465-B2E1-48717CB90E0E),
+	  helpstring("Event interface for HVActiveX2 Control") ]
+	dispinterface _DHVActiveX2Events
+	{
+		properties:
+			//  Event interface has no properties
+
+		methods:
+			[id(1)] void OnReceivePlate(void);
+	};
+
+	//  Class information for CHVActiveX2Ctrl
+
+	[ uuid(6335727F-F190-41DC-BC93-865866E85ED6),
+	  helpstring("HVActiveX2 Control"), control ]
+	coclass HVActiveX2
+	{
+		[default] dispinterface _DHVActiveX2;
+		[default, source] dispinterface _DHVActiveX2Events;
+	};
+
+};

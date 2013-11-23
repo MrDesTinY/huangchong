@@ -1,0 +1,322 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\ToHvshowDemo.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\ToHvshowDemo.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About ToHvshowDemo"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,21,20
+    LTEXT           "ToHvshowDemo, Version 1.0",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2012",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "OK",IDOK,113,41,50,14,WS_GROUP
+END
+
+IDD_TOHVSHOWDEMO_DIALOG DIALOGEX 0, 0, 648, 329
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "ToHvshowDemo"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_TOHVSHOWCTRL1,
+                    "{B38E8E73-1451-470F-8E0F-E71B9AFB3F53}",WS_TABSTOP,606,312,35,10
+    PUSHBUTTON      "登录",IDC_LOGIN,178,29,50,14
+    EDITTEXT        IDC_DEVICEADD,74,22,103,13,ES_AUTOHSCROLL
+    LTEXT           "设备地址：(同时登陆)",IDC_STATIC,30,29,40,17
+    LTEXT           "设备状态：",IDC_STATIC,29,51,43,12
+    LTEXT           "",IDC_STATUS,74,51,103,13,WS_BORDER
+    PUSHBUTTON      "获取",IDC_GETSTATUS,178,51,50,14
+    PUSHBUTTON      "登出设备",IDC_LOGINOUT,89,86,50,14
+    GROUPBOX        "控制接口",IDC_STATIC,12,12,226,94
+    PUSHBUTTON      "设置",IDC_SETDEFPATH,178,67,50,14
+    EDITTEXT        IDC_DEFPATH,74,67,103,13,ES_AUTOHSCROLL
+    LTEXT           "默认路径：",IDC_STATIC,29,67,43,12
+    GROUPBOX        "获取信息和保存结果接口",IDC_STATIC,12,111,296,200
+    LTEXT           "车牌号码：",IDC_STATIC,20,125,41,8
+    LTEXT           "",IDC_PLATE,61,123,54,13,WS_BORDER
+    PUSHBUTTON      "获取",IDC_GETPLATE,115,122,50,14
+    LTEXT           "车牌颜色：",IDC_STATIC,167,124,41,8
+    LTEXT           "",IDC_PLATECOLOR,210,122,28,13,WS_BORDER
+    PUSHBUTTON      "获取",IDC_GETPLATECOLOR,238,121,50,14
+    LTEXT           "附加信息：",IDC_STATIC,20,141,41,8
+    LTEXT           "",IDC_ADDINFO,61,139,174,13,WS_BORDER
+    PUSHBUTTON      "获取",IDC_GETADDINFO,238,138,50,14
+    PUSHBUTTON      "保存",IDC_SAVECARFULLPIC,238,155,50,14
+    EDITTEXT        IDC_CARFULLPIC,61,155,174,13,ES_AUTOHSCROLL
+    LTEXT           "车辆全景：",IDC_STATIC,20,157,41,8
+    PUSHBUTTON      "保存",IDC_SAVEFACEPIC,238,173,50,14
+    EDITTEXT        IDC_FACEPIC,61,173,174,13,ES_AUTOHSCROLL
+    LTEXT           "车脸大图：",IDC_STATIC,20,175,41,8
+    PUSHBUTTON      "保存",IDC_SAVEPLATEPIC,238,189,50,14
+    EDITTEXT        IDC_PLATEPIC,61,189,174,13,ES_AUTOHSCROLL
+    LTEXT           "车牌图片：",IDC_STATIC,20,191,41,8
+    PUSHBUTTON      "保存",IDC_SAVEPLATEBINPIC,238,206,50,14
+    EDITTEXT        IDC_PLATEBINPIC,61,206,174,13,ES_AUTOHSCROLL
+    LTEXT           "车牌二值：",IDC_STATIC,20,208,41,8
+    PUSHBUTTON      "保存",IDC_SAVEBINBMPPIC,238,224,50,14
+    EDITTEXT        IDC_BINBMPPIC,61,224,174,13,ES_AUTOHSCROLL
+    LTEXT           "二值BMP：",IDC_STATIC,20,226,41,8
+    LTEXT           "接收图像时间：",IDC_STATIC,20,243,57,8
+    LTEXT           "",IDC_SNAPTIME,77,241,97,13,WS_BORDER
+    PUSHBUTTON      "获取",IDC_GETSNAPTIME,238,240,50,14
+    LTEXT           "类型：",IDC_STATIC,177,243,25,8
+    EDITTEXT        IDC_SNAPTYPE,207,241,24,13,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "保存图像路径：",IDC_STATIC,20,261,57,8
+    LTEXT           "",IDC_SAVEPICPATH,78,259,209,13,SS_WORDELLIPSIS | WS_BORDER
+    PUSHBUTTON      "获取",IDC_GETSAVEPICPATH,237,275,50,14
+    LTEXT           "类型：",IDC_STATIC,177,278,25,8
+    EDITTEXT        IDC_SAVEPICTYPE,208,276,24,13,ES_AUTOHSCROLL | ES_NUMBER
+    GROUPBOX        "操作结果",IDC_STATIC,241,12,86,94
+    CTEXT           "无",IDC_RESULT,250,39,68,25,SS_CENTERIMAGE,WS_EX_CLIENTEDGE
+    GROUPBOX        "属性值",IDC_STATIC,330,12,303,94
+    CONTROL         "接收车辆大图",IDC_IFFULLPIC,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,346,24,64,10
+    LTEXT           "车辆图控件名：",IDC_STATIC,347,62,57,8
+    LTEXT           "车牌图控件名：",IDC_STATIC,347,49,57,8
+    CONTROL         "接收车辆小图",IDC_IFPLATEPIC,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,411,24,64,10
+    CONTROL         "接收车牌二值化图",IDC_IFBINPIC,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,476,24,80,10
+    CONTROL         "是否接收车脸图",IDC_IFFACEPIC,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,558,24,72,10
+    CONTROL         "自动保存",IDC_IFAUTOSAVE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,346,36,48,10
+    CONTROL         "打印日志",IDC_IFPRINTLOG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,411,36,48,10
+    LTEXT           "车牌号码控件名：",IDC_STATIC,339,90,65,8
+    LTEXT           "车脸图控件名：",IDC_STATIC,347,76,57,8
+    LTEXT           "",IDC_LBPLATECONTROL,402,47,73,13,WS_BORDER
+    LTEXT           "",IDC_LBFULLCONTROL,402,60,73,13,WS_BORDER
+    LTEXT           "",IDC_LBFACECONTROL,402,74,73,13,WS_BORDER
+    LTEXT           "",IDC_LBPLATENOCONTROL,402,88,73,13,WS_BORDER
+    PUSHBUTTON      "获取",IDC_GETPLATECONTROL,475,47,21,14
+    PUSHBUTTON      "获取",IDC_GETFULLCONTROL,475,60,21,14
+    PUSHBUTTON      "获取",IDC_GETFACECONTROL,475,74,21,14
+    PUSHBUTTON      "获取",IDC_GETPLATENOCONTROL,475,88,21,14
+    PUSHBUTTON      "设置",IDC_SETPLATECONTROL,606,47,21,14
+    EDITTEXT        IDC_EPLATECONTROL,498,47,107,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "设置",IDC_SETFULLCONTROL,606,60,21,14
+    EDITTEXT        IDC_EFULLCONTROL,498,60,107,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "设置",IDC_SETFACECONTROL,606,74,21,14
+    EDITTEXT        IDC_EFACECONTROL,498,74,107,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "设置",IDC_SETPLATENOCONTROL,606,88,21,14
+    EDITTEXT        IDC_EPLATENOCONTROL,498,88,107,13,ES_AUTOHSCROLL
+    GROUPBOX        "图片获取",IDC_STATIC,313,111,321,200
+    CONTROL         "",IDC_PCORG,"Static",SS_BLACKFRAME | WS_BORDER,318,125,152,122
+    CONTROL         "",IDC_PCFACE,"Static",SS_BLACKFRAME | WS_BORDER,473,125,152,122
+    CONTROL         "",IDC_PCPLATE,"Static",SS_BLACKFRAME | WS_BORDER,349,267,78,24
+    CONTROL         "",IDC_PCBIN,"Static",SS_BLACKFRAME | WS_BORDER,504,267,78,24
+    LTEXT           "车辆原图",IDC_STATIC,375,252,33,8
+    LTEXT           "车脸图",IDC_STATIC,525,252,25,8
+    LTEXT           "车牌图",IDC_STATIC,375,296,25,8
+    LTEXT           "车牌二值图",IDC_STATIC,525,296,41,8
+    EDITTEXT        IDC_DEVICEADD1,74,36,103,13,ES_AUTOHSCROLL
+    CONTROL         "",IDC_TOHVSHOWCTRL2,
+                    "{B38E8E73-1451-470F-8E0F-E71B9AFB3F53}",WS_TABSTOP,568,312,35,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "TODO: <File description>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "ToHvshowDemo.exe"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "ToHvshowDemo.exe"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_TOHVSHOWDEMO_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 641
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 322
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_TOHVSHOWDEMO_DIALOG DLGINIT
+BEGIN
+    IDC_TOHVSHOWCTRL1, 0x376, 174, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x057a, 0x0000, 0x01a7, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0xfeff, 0x0eff, 0x0053, 0x0068, 0x006f, 0x0077, 0x0050, 0x006c, 
+0x0061, 0x0074, 0x0065, 0x0049, 0x006d, 0x0061, 0x0067, 0x0065, 0xfeff, 
+0x0eff, 0x0053, 0x0068, 0x006f, 0x0077, 0x0046, 0x0069, 0x0072, 0x0073, 
+0x0074, 0x0049, 0x006d, 0x0061, 0x0067, 0x0065, 0xfeff, 0x0fff, 0x0053, 
+0x0068, 0x006f, 0x0077, 0x0053, 0x0065, 0x0063, 0x006f, 0x006e, 0x0064, 
+0x0049, 0x006d, 0x0061, 0x0067, 0x0065, 0xfeff, 0x0fff, 0x0053, 0x0068, 
+0x006f, 0x0077, 0x0050, 0x006c, 0x0061, 0x0074, 0x0065, 0x0052, 0x0065, 
+0x0073, 0x0075, 0x006c, 0x0074, 0x0001, 0x0000, 
+    IDC_TOHVSHOWCTRL2, 0x376, 174, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x057a, 0x0000, 0x01a7, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0xfeff, 0x0eff, 0x0053, 0x0068, 0x006f, 0x0077, 0x0050, 0x006c, 
+0x0061, 0x0074, 0x0065, 0x0049, 0x006d, 0x0061, 0x0067, 0x0065, 0xfeff, 
+0x0eff, 0x0053, 0x0068, 0x006f, 0x0077, 0x0046, 0x0069, 0x0072, 0x0073, 
+0x0074, 0x0049, 0x006d, 0x0061, 0x0067, 0x0065, 0xfeff, 0x0fff, 0x0053, 
+0x0068, 0x006f, 0x0077, 0x0053, 0x0065, 0x0063, 0x006f, 0x006e, 0x0064, 
+0x0049, 0x006d, 0x0061, 0x0067, 0x0065, 0xfeff, 0x0fff, 0x0053, 0x0068, 
+0x006f, 0x0077, 0x0050, 0x006c, 0x0061, 0x0074, 0x0065, 0x0052, 0x0065, 
+0x0073, 0x0075, 0x006c, 0x0074, 0x0001, 0x0000, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About ToHvshowDemo..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\ToHvshowDemo.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

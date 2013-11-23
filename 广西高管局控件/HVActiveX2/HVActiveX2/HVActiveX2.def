@@ -1,0 +1,9 @@
+; HVActiveX2.def : Declares the module parameters.
+
+LIBRARY      "HVActiveX2.OCX"
+
+EXPORTS
+	DllCanUnloadNow     PRIVATE
+	DllGetClassObject   PRIVATE
+	DllRegisterServer   PRIVATE
+	DllUnregisterServer PRIVATE

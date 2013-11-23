@@ -1,0 +1,9 @@
+; ToHvShow.def : Declares the module parameters.
+
+LIBRARY      "ToHvShow.OCX"
+
+EXPORTS
+	DllCanUnloadNow     PRIVATE
+	DllGetClassObject   PRIVATE
+	DllRegisterServer   PRIVATE
+	DllUnregisterServer PRIVATE
